@@ -15,7 +15,7 @@ const double LAMBDA = 1;
 int main ()
 {
     euler(0.01, "euler.dat");
-    rk(0.01, "rk.dat");
+    runge_kutta(0.01, "rk.dat");
     cout<<"Se espera que la solucion sea en terminos de seno y coseno, puesto que es un oscilador armonico ";
     return 0;
 }
@@ -77,7 +77,7 @@ void runge_kutta(double dt, string nombre)
     t=0.0;
     for (int i=0; i<=20;i++)
     {
-        dvx = (y_presente*dt)+vy_presente;
+        dvx = (x_presente*dt)+vx_presente;
         outfile<<x_futuro<<" "<<vx_futuro<<" "<<endl;
         
         k0_x = vx_presente;
