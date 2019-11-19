@@ -15,7 +15,7 @@ const double LAMBDA = 1;
 int main ()
 {
     euler(0.01, "euler.dat");
-    rk(0.01, "rk.dat"
+    rk(0.01, "rk.dat");
     cout<<"Se espera que la solucion sea en terminos de seno y coseno, puesto que es un oscilador armonico ";
     return 0;
 }
